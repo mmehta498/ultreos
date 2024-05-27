@@ -43,6 +43,12 @@ height: auto;
 margin: 0 auto;
 }
 
+.wrap-text {
+  display: inline-block; /* Ensures the span behaves like a block for wrapping purposes */
+  overflow: hidden;     /* Hides any overflow content */
+  word-break: break-all; /* Breaks the word at any character to wrap text */
+}
+
 .zoom:hover {
 -ms-transform: scale(1.1); /* IE 9 */
 -webkit-transform: scale(1.1); /* Safari 3-8 */
@@ -377,7 +383,7 @@ transform: scale(1.1);
                                                                                  aria-hidden="true"></i></a></li>
                         </ul>
                         <h4 class="mt-5">Contact Us</h4>
-                        <h5> morihardik2000@gmail.com </h5>
+                        <h5 class="wrap-text">morihardik2000@gmail.com</h5>
                     </div>
                     <div class="col-6">
                         <h4>Services</h4>

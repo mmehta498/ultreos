@@ -50,6 +50,11 @@ transform: scale(1.1);
 }
 
 
+.wrap-text {
+  display: inline-block; /* Ensures the span behaves like a block for wrapping purposes */
+  overflow: hidden;     /* Hides any overflow content */
+  word-break: break-all; /* Breaks the word at any character to wrap text */
+}
 
 
 .gtco-features .col-lg-12 .card {
@@ -122,32 +127,29 @@ transform: scale(1.1);
 </nav>
 <div id="about" style="margin-top: 3%;">
 
-
+    <div class="container-fluid gtco-banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1> Who Are We?</h1>
+                    <br>
+                    <p class="lead fs-4 text-secondary mb-3">We are committed to delivering exceptional services through our experienced team, ensuring optimal performance in every situation. </p>
+                    <p class="mb-5">Our belief is that the growth of the company and the individual go hand in hand, providing ample opportunities for development.</p>
+                      
+                    <h2 class="mb-3">Our Goal</h2>
+                    <p class="lead fs-4 text-secondary mb-3">Our goal is to develop high-quality, innovative, and secure IT products that meet the evolving needs of our customers, ensuring their satisfaction and trust. </p>
+                    <p>  </p>
+                    <!-- <a href="#">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                </div>
+                <div class="col-md-6">
+                    <div class="card"><img class="card-img-top img-fluid" src="images/banner-img.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- About 1 - Bootstrap Brain Component -->
-<section class="py-1 py-md-1" style="margin-left: -10%;">
-    <div class="container">
-      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-        
-        <div class="col-12 col-lg-6 col-xl-7">
-          <div class="row justify-content-xl-center">
-            <div class="col-12 col-xl-11">
-              <h2 class="mb-3">Who Are We?</h2>
-              <p class="lead fs-4 text-secondary mb-3">We are committed to delivering exceptional services through our experienced team, ensuring optimal performance in every situation. </p>
-              <p class="mb-5">Our belief is that the growth of the company and the individual go hand in hand, providing ample opportunities for development.</p>
-              <p class="lead fs-4 text-secondary mb-3"></p>
-              <h2 class="mb-3">Our Goal</h2>
-              <p class="lead fs-4 text-secondary mb-3">Our goal is to develop high-quality, innovative, and secure IT products that meet the evolving needs of our customers, ensuring their satisfaction and trust. </p>
-            
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-5" style="padding-left: 100px; margin-top: -70px;">
-          <img class="" loading="lazy" src="./images/aboutus.png" alt="About 1" >
-        </div>
-      </div>
-    </div>
-  </section>
+
   
         
      
@@ -283,7 +285,7 @@ transform: scale(1.1);
             </div>
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" >
                         <h4>Company</h4>
                         <ul class="nav flex-column company-nav">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -301,7 +303,7 @@ transform: scale(1.1);
                             <li   class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                         <h4 class="mt-5">Contact Us</h4>
-                        <h5> morihardik2000@gmail.com </h5>
+                        <h5 class="wrap-text">morihardik2000@gmail.com</h5>
                     </div>
                     <div class="col-6">
                         <h4>Services</h4>
